@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tab {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tab:hover {
+
+    background-color:#fbf7f2;
+}
+
+.content {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+#About { background-color: tomato; display: block;}
+#Products { background-color: darkolivegreen; }
+#Technology { background-color:  dodgerblue; }
+#Downloads { background-color: orange; }
+
+
+
+
+    </style>
+   </head>
+<body>
+    <div id="About" class="content">
+      <h1>About</h1>
+      <p>Custom Software Development Company</p>
+    </div>
+
+    <div id="Products" class="content">
+      <h1>Products</h1>
+      <p>Building tailored software to address critical needs of global enterprises.</p>
+    </div>
+
+    <div id="Technology" class="content">
+      <h1>Technology</h1>
+      <p>Machine Learning, Artificial Intelligent, Cloud Platform.</p>
+    </div>
+
+    <div id="Downloads" class="content">
+      <h1>Downloads</h1>
+      <p>You can download a free 10 days trial.</p>
+    </div>
+
+    <button id="default" class="tab" onclick="openMenu('About', this, 'tomato')">About</button>
+    <button class="tab" onclick="openMenu('Products', this, 'darkolivegreen')">Products</button>
+    <button class="tab" onclick="openMenu('Technology',this,'dodgerblue')">Technology</button>
+    <button class="tab" onclick="openMenu('Downloads',this,'orange')">Downloads</button>
+    <div id="test" style ="border: 1px solid #555;"></div>
+    <script>
+         function openMenu(id, target, color) {
+            let $content = document.querySelectorAll('.content');
+            let $id = document.getElementById(id);
+            $content.forEach((item, index) => {
+                item.style.display = "none";
+            });
+            $id.style.display = "block";
+        }
+  
+    </script>
+  </body>
+
+</html>
