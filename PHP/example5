@@ -1,0 +1,24 @@
+<table border=1 width=300>
+   <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+   </tr>
+<?php
+   $myarray = [
+      ['녹칸다', '20', '남성', 'aa'],
+      ['녹칸다', '20', '남성', 'aa'],
+      ['녹칸다', '20', '남성', 'aa'],
+   ];
+   echo count($myarray[0]);
+   
+   for($i=0; $i<count($myarray); $i++){
+      echo "   <tr>";
+      for($j=0; $j<4; $j++){
+         echo "<td>". $myarray[$i][$j]. "</td>";
+      }
+      echo "</tr>";
+   }
+?>   
+</table>
