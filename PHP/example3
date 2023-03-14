@@ -1,0 +1,5 @@
+<?php
+ $_GET['name'];
+?>
+
+name = 녹칸다&age = 20
