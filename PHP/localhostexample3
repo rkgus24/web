@@ -1,0 +1,14 @@
+<?php
+ if(isset($_GET['name'])) {
+  echo $_GET['name'];
+  echo "<BR>";
+} else {
+  echo "name이 존재하지 않습니다! <BR>";
+}
+if(isset($_GET['age'])) {
+  echo $_GET['age'];
+  echo "<BR>";
+} else {
+  echo "age가 존재하지 않습니다! <BR>";
+}
+?>
