@@ -1,0 +1,5 @@
+<?php
+  //$_GET['num'];
+  $data = "<input type=\"text\">";
+  echo $data;
+?>
